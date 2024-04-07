@@ -9,7 +9,7 @@
 #define TRIG 12 //D6, GPIO12
 #define ECHO 13 //D7, GPIO13 
 
-const char* mqtt_server_address = "172.105.90.154";
+const char* mqtt_server_address = "IP-ADDRESS";
 
 float duration_us, distance_cm;
 float filterArray[20];
@@ -101,7 +101,7 @@ void setup() {
     WiFiManager wm;
     //reset saved settings
     //wifiManager.resetSettings();
-    delay(200);
+    delay(300);
     //set custom ip for portal
     //wifiManager.setAPStaticIPConfig(IPAddress(10,0,1,1), IPAddress(10,0,1,1), IPAddress(255,255,255,0));
 
